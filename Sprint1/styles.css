@@ -1,0 +1,56 @@
+.container {  display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 459px 111px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nivel1 nivel1 nivel1"
+      "content-area content-area information-area"
+      "footer-area footer-area footer-area";
+      max-width: 1200px;
+  }
+  
+  .nivel1 {  display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 50px 250px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "icon-logo buttons-area social-links"
+      "logo-area logo-area logo-area";
+    grid-area: nivel1;
+  }
+  
+  .icon-logo { grid-area: icon-logo}
+
+  .icon { max-width: 100%; max-height: 100%; object-fit: contain;}
+  
+  .buttons-area { grid-area: buttons-area; }
+  
+  .social-links { grid-area: social-links; }
+  
+  .logo-area { grid-area: logo-area; }
+  
+  .content-area {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "entry-1 entry-2"
+      "entry-3 entry-4";
+    grid-area: content-area;
+  }
+  
+  .entry-1 { grid-area: entry-1; }
+  
+  .entry-2 { grid-area: entry-2; }
+  
+  .entry-3 { grid-area: entry-3; }
+  
+  .entry-4 { grid-area: entry-4; }
+  
+  .footer-area { grid-area: footer-area; }
+  
+  .information-area { grid-area: information-area; }
+  
